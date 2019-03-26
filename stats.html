@@ -1,0 +1,71 @@
+<!--DOCTYPE HTML-->
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title> Statistics </title>
+</head>
+
+<body onload="monthlySpendings()">
+
+    <div class="nav"> <!--Left Side-->
+        <img class="profilePic" src="img/mii.png"> <!--Profile Pic-->
+        <p class="userName">Sample User</p> <!--Profile Name-->
+        <ul>
+            <li><a href="index.html"><img id="icos" src="img/dash.png">Overview</a></li> <!--Link home page here-->
+            <li><a class="active" href="stats.html"><img id="icos" src="img/stat.png">Statistics</a></li>
+        </ul>
+    </div>
+
+    <div class="content"> <!--Right Side-->
+
+        <div class="gnb"> <!--The Goal, Networth, Budget Bar-->
+
+            <!--Goal-->
+            <div class="dataBlocks"> <!--Blocks of Title + Stats-->
+                <div class="dataTitle"> <!--Title-->
+                    <p>This Month's Goal</p>
+                </div>
+                <div class="dataStat"> <!--Stats-->
+                    <p>Under $500</p>
+                </div>
+            </div>
+
+            <!--Total Networth-->
+            <div class="dataBlocks">
+                <div class="dataTitle">
+                    <p>Total Networth</p>
+                </div>
+                <div class="dataStat">
+                    <p>$1850</p>
+                </div>
+            </div>
+
+            <!--Daily Budget-->
+            <div class="dataBlocks">
+                <div class="dataTitle">
+                    <p>Recommended Daily Budget</p>
+                </div>
+                <div class="dataStat">
+                    <p>Under $50</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Graph Switching Buttons-->
+        <div class="buttonTabs">
+            <button class="btn" onClick="monthlySpendings()">Monthly Spendings</button>
+            <button class="btn" onClick="weeklySpendings()">Weekly Spendings</button>
+            <button class="btn" onClick="dailySpendings()">Daily Spendings</button>
+        </div>
+
+        <!--Canvas to Display the Graph-->
+        <canvas id="myChart" width="auto" height="auto"></canvas>
+        <!--Script from Chart.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!--DOCTYPE HTML-->
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> Statistics </title>
+</head>
+
+<body>
+
+    <div class="nav"> <!--Left Side-->
+        <img class="profilePic" src="img/mii.png"> <!--Profile Pic-->
+        <p class="userName">Sample User</p> <!--Profile Name-->
+        <ul>
+            <li><a class="active" href="index.html"><img id="icos" src="img/dash.png">Overview</a></li> <!--Link home page here-->
+            <li><a href="stats.html"><img id="icos" src="img/stat.png">Statistics</a></li>
+        </ul>
+    </div>
+
+    <div class="content"> <!--Right Side-->
+        <div id="searchbar">
+            <img id="searchlogo" src="img/search.png">
+            <input id="search" type="text" placeholder="Search Saved Food Items">
+        </div>
+
+        <div id="maintop">
+            <div id="tracker">
+                <p id="track">You're on the right track!</p> 
+                <p class="smaller" id="mess">Based on your spending, you will reach your goals</p>
+            </div>
+
+            <div id="bTracker">
+                <div class="dataBlocks" id="vLine">
+                    <p class="bigger">$500</p>
+                    <p class="smaller">Your budget goal for the month</p>
+                </div>
+
+                <div class="dataBlocks" id="vLine">
+                    <p class="bigger" id="totalz">$800</p>
+                    <p class="smaller">How much you've spent today</p>
+                </div>
+
+                <div class="dataBlocks">
+                    <p class="bigger" id="dailies">$50</p>
+                    <p class="smaller">Daily spending to stay on track</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="usrInput">
+            <div id="logging">
+                <p id="logIt">Log Food Purchases for Today</p>
+                
+                <div id="theButts">
+                    <button id="theButts1">I'm eating out!</button>
+                    <button id="theButts2">I'm buying groceries!</button>
+                </div>
+            </div>
+
+            <div id="inputIt">
+                <div id="food">
+                    <input id="fud" type="text" placeholder="Food Item Name">
+                </div>
+
+                <div id="price">
+                    <p>$</p><input id="ppz" type="number" placeholder="Price">
+                </div>
+            </div>
+
+            <p id="orElement">or</p>
+
+            <div id="inputIt">
+                <div id="history">
+                    <div id="topHistory">
+                        <p>History</p>
+                    </div>
+                    
+                    <div class="holders1" id="holders1">
+                        <div class="dataBlocks" id="foods">
+                            <p>Burger</p>
+                        </div>
+
+                        <div class="dataBlocks" id="prices">
+                            <p>$12.00</p>
+                        </div>
+
+                        <div class="dataBlocks" id="bought">
+                            <p>Take Out</p>
+                        </div>
+                    </div>
+
+                    <div class="holders2" id="holders2">
+                        <div class="dataBlocks" id="foods">
+                            <p>Fries</p>
+                        </div>
+    
+                        <div class="dataBlocks" id="prices">
+                            <p>$4.00</p>
+                        </div>
+    
+                        <div class="dataBlocks" id="bought">
+                            <p>Take Out</p>
+                        </div>
+                    </div>
+
+                    <div class="holders3" id="holders3">
+                        <div class="dataBlocks" id="foods">
+                            <p>Lettuce</p>
+                        </div>
+
+                        <div class="dataBlocks" id="prices">
+                            <p>$3.00</p>
+                        </div>
+
+                        <div class="dataBlocks" id="bought">
+                            <p>Groceries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="logButts">
+                <button id="leftSave">LOG MY FOOD!</button>
+                <button id="rightSave">SAVE AND LOG THIS ITEM!</button>
+            </div>
+        </div>
+
+        <div id="grocery">
+            <div id="takeouts">
+                <div id="leftT">
+                    <img class="icosB" src="img/burg.png">
+                    <div class="counts">
+                        <p class="bigger" id="hams">24 Times</p>
+                        <p class="smaller">Amount of times you've eaten out</p>
+                    </div>
+                </div>
+                <div id="rightT">
+                    <img class="icosB" src="img/chick.png">
+                    <div class="counts">
+                        <p class="bigger" id="homes">14 Times</p>
+                        <p class="smaller">Amount of times you've eaten at home</p>
+                    </div>
+                </div>
+            </div>
+            <div id="totals">
+                <img class="icosB" src="img/cash.png">
+                <div class="counts">
+                    <p class="bigger">$1000</p>
+                    <p class="smaller">Allocated food money for this month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="mainScript.js"></script>
+
+</body>
+</html>

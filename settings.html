@@ -1,0 +1,74 @@
+<!--DOCTYPE HTML-->
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title> Statistics </title>
+</head>
+
+<body onload="monthlySpendings()">
+
+    <div class="nav"> <!--Left Side-->
+        <img class="profilePic" src="img/mii.png"> <!--Profile Pic-->
+        <p class="userName">Sample User</p> <!--Profile Name-->
+        <ul>
+            <li><a href="index.html"><img id="icos" src="img/dash.png">Overview</a></li> <!--Link home page here-->
+            <li><a href="stats.html"><img id="icos" src="img/stat.png">Statistics</a></li>
+            <li><a class="active" href="settings.html"><img id="icos" src="img/setting.png">Settings</a></li> <!--Link setting page here if we have one-->
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="settingHead">
+            <p>Account Settings</p>
+        </div>
+        <div class="settingContent">
+            <p id="logIt">Username</p>
+            <input class="settingInput" value="Sample User Name">
+            <button> Edit </button>
+            <br>
+            <br> 
+            <p id="logIt">E-mail</p>
+            <input class="settingInput" value="sample_user@email.com">
+            <button> Edit </button>
+            <br>
+            <br> 
+            <p id="logIt">Password</p>
+            <input class="settingInput" value="**********">
+            <button> Edit </button>
+            <br>
+            <br> 
+        </div>
+
+        <div class="settingHead">
+                <p>Savings Goal Seings</p>
+            </div>
+            <div class="settingContent">
+                <p id="logIt">Monthly Target Budget</p>
+                <input class="settingInput" value="$500">
+                <button> Edit </button>
+                <br>
+                <br> 
+                <p id="logIt">Current Monthly Spendings</p>
+                <input class="settingInput" value="$800">
+                <button> Edit </button>
+                <br>
+                <br> 
+                <p id="logIt">Tax in Region</p>
+                <input class="settingInput" value="15%">
+                <button> Edit </button>
+                <br>
+                <br> 
+            </div>
+
+            <a href="https://google.ca" class="logOut"> Log Out </a>
+
+    </div>
+
+
+
+    </body>
+
+    </html>

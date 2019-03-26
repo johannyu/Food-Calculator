@@ -1,0 +1,557 @@
+/* ----------------- Global Styles ----------------- */
+body {
+    background-color: #F5F5F5;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    min-width: 1000px;
+    max-height: 100%;
+}
+
+p {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+input {
+    outline-width: 0;
+    border-style: none;
+}
+
+
+/* 
+-----------------------------------------------------
+*****************************************************
+Main Page Content 
+*****************************************************
+----------------------------------------------------- 
+*/
+
+/* ------------------ Search Bar ------------------ */
+#searchbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+}
+#searchLogo {
+    margin: 10px;
+}
+
+#search {
+    background-color: rgba(0, 0, 0, 0);
+    width: 85%;
+    padding: 10px;
+    padding-left: 0px;
+    border-style: none;
+    font-size: 14px;
+}
+
+
+
+/* ------------------ Tracker ------------------ */
+#maintop {
+    background-color: #42CE88;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#tracker {
+    margin: 10px 20px 40px;
+    display: block;
+}
+#track {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.smaller {
+    font-size: 16px;
+}
+
+.bigger {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#bTracker {
+    display: block;
+    margin: 0px 0px 30px;
+}
+
+#vLine.dataBlocks {
+    border-right: 1px solid white;
+}
+
+
+
+/* ------------------ Logger ------------------ */
+#usrInput {
+    margin: 15px;
+    padding: 0px;
+}
+
+#orElement{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+#logging { /* The top text and buttons */
+    overflow: hidden;
+    display: block;
+    margin: 30px 0px;
+}
+
+#logIt {
+    float: left;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+#theButts {
+    float: right;
+}
+
+#inputIt { /* The inputs div container*/
+    overflow: hidden;
+    display: block;
+    padding: 0px 70px;
+}
+
+#food {
+    border-radius: 3px;
+    float: left;
+    background-color: white;
+    width: 49.5%;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#food input {
+    font-size: 16px;
+    margin-left: 10px;
+    width: 96.5%;
+}
+
+#price {
+    border-radius: 3px;
+    float: right;
+    background-color: white;
+    width: 49.5%;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#price input {
+    font-size: 16px;
+    margin-left: 5px;
+    width: 95%;
+}
+
+#price p {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+#history { /* The selections for saved food items */
+    overflow: scroll;
+    border-radius: 3px;
+    height: 110px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#topHistory p {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+#foods p, #prices p, #bought p{
+    color: black;
+    font-weight: 100px;
+    font-size: 16px;
+}
+
+#foods p{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#prices p{
+    text-align: center;
+}
+
+#bought p{
+    margin-right: 20px;
+    text-align: right;
+}
+
+.holders1 {
+    border-radius: 20px;
+    margin: auto 10px;
+}
+.holders2 {
+    border-radius: 20px;
+    margin: auto 10px;
+}
+.holders3 {
+    border-radius: 20px;
+    margin: auto 10px;
+}
+
+.holders1:hover, .holders2:hover, .holders3:hover {
+    background-color: #EEEEEE !important;
+}
+
+
+
+/* -------------------- Buttons --------------------- */
+button:focus {
+    outline: 0;
+}
+#logButts {
+    display: block;
+    overflow: hidden;
+}
+
+#leftSave {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #47BEFB;
+    color: white;
+    float:left;
+    border-style: none;
+    border-radius: 6px;
+    width: 49.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#leftSave:hover, #rightSave:hover {
+    background-color: rgb(0, 170, 255);
+}
+
+#rightSave {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #47BEFB;
+    color: white;
+    float:right;
+    border-style: none;
+    border-radius: 6px;
+    width: 49.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#theButts1 {
+    float:right;
+    display: block;
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    background-color: white;
+    border-style: none;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#theButts2 {
+    float:right;
+    display: block;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    background-color: white;
+    border-style: none;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#theButts1:hover, #theButts2:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+/* ------------------ Last Part ------------------ */
+#grocery {
+    overflow: hidden;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.icosB {
+    margin: auto 20px;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+#takeouts {
+    float: left;
+    display: block;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 65.9%;
+}
+
+#takeouts p {
+    color: black;
+}
+
+#leftT {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 50%;
+}
+
+#rightT {
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 50%;
+}
+
+#totals {
+    display: flex;
+    align-items: center;
+    float: right;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 32.9%;
+}
+
+#totals p {
+    color: black;
+}
+
+/* 
+-----------------------------------------------------
+*****************************************************
+Stats Page Content
+*****************************************************
+----------------------------------------------------- 
+*/
+
+/* ------------------ User Profile ------------------*/
+.userName {
+    text-align: center;
+}
+
+.profilePic{
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+
+
+
+/* ------------------ NavBar ------------------ */
+ul {
+    list-style-type: none;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0;
+    height: 100%;
+    background-color: #5E627D;
+}
+   
+li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    text-align: left;
+    font-size: 14px;
+}
+   
+li a:hover {
+    background-color: #2B2F51;
+    color: white;
+}
+
+.active {
+    background-color: #2B2F51;
+    color: white;
+}
+
+#icos {
+    float: left;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+
+
+/* --------- Content on the Right --------- */
+.content {
+    width: 88%;
+    margin: 0px;
+    background-color: F5F5F5;
+    float: right;
+}
+
+
+
+
+/* --------- Goals, Networth, and Daily Budget Bar --------- */
+.gnb {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    padding-bottom: 0px;
+    background-color: #47BEFB;
+}
+
+.dataBlocks {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    width: 33%;
+}
+
+.dataTitle {
+    font-size: 16px;
+}
+.dataStat {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+
+
+/* ----------- Buttons to switch graphs ----------- */
+.buttonTabs {
+    width: 100%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    border-radius: 3px;
+    width:33%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    border-style: none;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    color: #5E627D;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #42CE88;
+    color: white;
+}
+
+
+
+
+/* ----------------- Graph --------------------- */
+canvas {
+    display: block;
+    border-left: 5px;
+    width:55%;  
+    background-color: #F5F5F5;
+}
+
+.nav {
+    position: fixed;
+    float: left;
+    background-color:#5E627D;
+    width: 12%; 
+    min-width: 120px;
+    height: 100vh;
+}
+
+
+
+/* 
+-----------------------------------------------------
+*****************************************************
+Settings Page Content
+*****************************************************
+----------------------------------------------------- 
+*/
+
+/* --------------- Heading Bars ------------------ */
+.settingHead {
+    background-color: #2B2F51;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.settingContent {
+    margin: 15px;
+    padding: 20px;
+}
+
+.settingInput {
+    margin: 8px;
+
+}
+
+a.logOut{
+    border-radius: 3px;
+    margin: 8px;
+    width:100%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    border-style: none;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    color: #5E627D;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+a.logOut:hover{
+    background-color: #42CE88;
+    color: white;
+}
